@@ -52,7 +52,7 @@ const Status = ({ navigation }) => {
         style={{
           marginHorizontal: 15,
           height: windowHeight,
-          paddingTop:40
+          paddingTop:40,
         }}
       >
         <View
