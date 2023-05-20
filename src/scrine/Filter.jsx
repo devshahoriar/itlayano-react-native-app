@@ -266,7 +266,7 @@ const Filter = () => {
         <View
           style={{
             flexDirection: 'row',
-            backgroundColor: theme['color-primary-200'],
+            backgroundColor: gray,
             marginHorizontal: 10,
             paddingHorizontal: 5,
             paddingVertical: 5,

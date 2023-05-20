@@ -1,7 +1,6 @@
 import { AntDesign } from '@expo/vector-icons'
 import { useTheme } from '@ui-kitten/components'
-import React from 'react'
-import { memo } from 'react'
+import React, { memo } from 'react'
 import {
   Dimensions,
   Image,
@@ -20,9 +19,10 @@ const Item = () => {
         marginHorizontal: 10,
         marginVertical: 8,
         flexDirection: 'row',
-        backgroundColor: theme['color-primary-200'],
+        backgroundColor: "white",
+        alignItems: 'center',
         borderRadius: 10,
-      
+      elevation:10,
       }}
     >
       <Image
@@ -41,19 +41,20 @@ const Item = () => {
         <TouchableOpacity
           style={{
             position: 'absolute',
-            top: 10,
+            // top: 5,
             right: 10,
             backgroundColor: 'white',
             padding: 5,
             borderRadius: 20,
-            elevation: 20,
             zIndex: 100,
+
           }}
         >
-          <AntDesign name="heart" size={18} color="#757F8B" />
+          <AntDesign name="heart" size={18} color="red" />
+          {/* <AntDesign name="hearto" size={18} color="red" /> */}
         </TouchableOpacity>
-        <Text style={{ fontSize: 23 }}>Propaty name</Text>
-        <Text style={{ fontSize: 18, color: theme['color-primary-600'] }}>
+        <Text style={{ fontSize: 18 }}>Propaty name</Text>
+        <Text style={{ fontSize: 16, color: theme['color-primary-600'] }}>
           $500
         </Text>
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>

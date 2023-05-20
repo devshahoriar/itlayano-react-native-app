@@ -5,17 +5,17 @@ import {
   MaterialIcons,
 } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
+import { useTheme } from '@ui-kitten/components'
 import {
   Dimensions,
   Image,
+  StatusBar,
   Text,
   TouchableOpacity,
   View,
-  StatusBar,
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { darkGray, gray } from '../utils/th'
-import { Icon, useTheme } from '@ui-kitten/components'
 
 const NavidationButton = ({ title, go, icon }) => {
   const navigation = useNavigation()
@@ -33,7 +33,7 @@ const NavidationButton = ({ title, go, icon }) => {
       >
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           {icon}
-          <Text style={{ fontSize: 25, marginLeft: 15 }}>{title}</Text>
+          <Text style={{ fontSize: 18, marginLeft: 15 }}>{title}</Text>
         </View>
         <MaterialIcons name="arrow-right" size={24} color={darkGray} />
       </View>
@@ -52,7 +52,7 @@ const Status = ({ navigation }) => {
         style={{
           marginHorizontal: 15,
           height: windowHeight,
-          paddingTop:40,
+          paddingTop: 40,
         }}
       >
         <View
@@ -91,51 +91,54 @@ const Status = ({ navigation }) => {
             title="Transfer Money"
             go="Boot"
             icon={
-              <MaterialIcons name="compare-arrows" size={24} color="black" />
+              <MaterialIcons name="compare-arrows" size={20} color="black" />
             }
           />
           <NavidationButton
             title="Your Cards"
             go="Boot"
-            icon={<FontAwesome5 name="credit-card" size={24} color="black" />}
+            icon={<FontAwesome5 name="credit-card" size={20} color="black" />}
           />
           <NavidationButton
             title="Profile"
             go="Profile"
-            icon={<AntDesign name="profile" size={24} color="black" />}
+            icon={<AntDesign name="profile" size={20} color="black" />}
           />
           <NavidationButton
             title="Settings"
             go="Boot"
-            icon={<AntDesign name="setting" size={24} color="black" />}
+            icon={<AntDesign name="setting" size={20} color="black" />}
           />
         </View>
-        <View
-          style={{
-            marginTop: 30,
-            backgroundColor: th['color-primary-200'],
-            paddingVertical: 23,
-            paddingHorizontal: 10,
-            flexDirection: 'row',
-            alignItems: 'center',
-            borderRadius: 15,
-          }}
-        >
-          <MaterialCommunityIcons
-            name="frequently-asked-questions"
-            size={40}
-            color={th['color-primary-800']}
-          />
-          <Text
+        <TouchableOpacity>
+          <View
             style={{
-              color: th['color-primary-800'],
-              fontSize: 25,
-              marginLeft: 10,
+              marginTop: windowHeight * 0.17,
+              backgroundColor: th['color-primary-200'],
+              paddingVertical: 23,
+              paddingHorizontal: 10,
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 15,
             }}
           >
-            How we can help you?
-          </Text>
-        </View>
+            <MaterialCommunityIcons
+              name="frequently-asked-questions"
+              size={20}
+              color={th['color-primary-800']}
+            />
+            <Text
+              style={{
+                color: th['color-primary-800'],
+                fontSize: 18,
+                marginLeft: 10,
+              }}
+            >
+              How we can help you?
+            </Text>
+          </View>
+        </TouchableOpacity>
         <View style={{ position: 'absolute', bottom: 15, width: '100%' }}>
           <Text style={{ textAlign: 'center', fontSize: 18, color: darkGray }}>
             ©Company Name™

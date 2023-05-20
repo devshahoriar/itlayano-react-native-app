@@ -1,16 +1,26 @@
+import * as eva from '@eva-design/eva'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { Filter, Home, LogIn, Profile, Register, Status } from './src/scrine'
-import * as eva from '@eva-design/eva'
-import { ApplicationProvider, Layout, Text } from '@ui-kitten/components'
-import { default as theme } from './src/utils/custom-theme.json'
+import { ApplicationProvider } from '@ui-kitten/components'
+import 'react-native-gesture-handler'
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
-import Boot from './src/scrine/Boot'
+import 'react-native-reanimated'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 import {
-  TransitionSpecs,
-  CardStyleInterpolators,
-} from '@react-navigation/stack'
+  AddPropaty,
+  Chat,
+  Filter,
+  Home,
+  LogIn,
+  Privechi,
+  Profile,
+  Register,
+  Status,
+} from './src/scrine'
+import Boot from './src/scrine/Boot'
+import { default as theme } from './src/utils/custom-theme.json'
+import 'react-native-reanimated'
+import 'react-native-gesture-handler'
 
 const Stack = createNativeStackNavigator()
 
@@ -30,6 +40,9 @@ function App() {
             <Stack.Screen name="Filter" component={Filter} />
             <Stack.Screen name="Boot" component={Boot} />
             <Stack.Screen name="Status" component={Status} />
+            <Stack.Screen name="AddPropaty" component={AddPropaty} />
+            <Stack.Screen name="Chat" component={Chat} />
+            <Stack.Screen name="Privechy" component={Privechi} />
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>

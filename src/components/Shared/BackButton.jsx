@@ -5,10 +5,10 @@ import {
 } from 'react-native'
 
 
-const BackButton = () => {
+const BackButton = ({position='absolute'}) => {
   return( <TouchableOpacity
     style={{
-      position: 'absolute',
+      position: position,
       top: 45,
       left: 15,
       zIndex: 100,
