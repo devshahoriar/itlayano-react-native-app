@@ -7,5 +7,7 @@ import Status from './Status'
 import AddPropaty from './AddPropaty'
 import Chat from './Chat'
 import Privechi from './Privechi'
+import Support from './Support'
+import Faq from './Faq'
 
-export { Home, LogIn, Profile, Register, Filter, Status , AddPropaty, Chat, Privechi }
+export { Home, LogIn, Profile, Register, Filter, Status , AddPropaty, Chat, Privechi, Support, Faq }

@@ -18,6 +18,7 @@ const Boot = ({ navigation }) => {
           AddPropaty
         </Button>
         <Button onPress={() => navigation.navigate('Chat')}>Chat</Button>
+        <Button onPress={() => navigation.navigate('Support')}>Support</Button>
         <Button onPress={() => navigation.navigate('Privechy')}>
           Privechy
         </Button>

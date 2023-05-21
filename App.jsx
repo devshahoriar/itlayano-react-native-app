@@ -9,6 +9,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import {
   AddPropaty,
   Chat,
+  Faq,
   Filter,
   Home,
   LogIn,
@@ -16,6 +17,7 @@ import {
   Profile,
   Register,
   Status,
+  Support,
 } from './src/scrine'
 import Boot from './src/scrine/Boot'
 import { default as theme } from './src/utils/custom-theme.json'
@@ -43,6 +45,8 @@ function App() {
             <Stack.Screen name="AddPropaty" component={AddPropaty} />
             <Stack.Screen name="Chat" component={Chat} />
             <Stack.Screen name="Privechy" component={Privechi} />
+            <Stack.Screen name="Support" component={Support} />
+            <Stack.Screen name="Faq" component={Faq} />
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>
