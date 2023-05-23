@@ -10,6 +10,7 @@ import Privechi from './Privechi'
 import Support from './Support'
 import Faq from './Faq'
 import Houses from './Houses'
+import HouseItem from './HouseItem'
 
 export {
   Home,
@@ -23,5 +24,6 @@ export {
   Privechi,
   Support,
   Faq,
+  HouseItem,
   Houses,
 }

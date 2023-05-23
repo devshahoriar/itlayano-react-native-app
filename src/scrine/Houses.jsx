@@ -21,6 +21,21 @@ const slides = [
   'https://source.unsplash.com/random/?village',
 ]
 
+const box = [
+  {
+    title: 'The Cozy Place',
+    place: 'New York',
+    star: 4.5,
+    img: 'https://source.unsplash.com/random/?citys',
+  },
+  {
+    title: 'The Cozy Place',
+    place: 'New York',
+    star: 4.5,
+    img: 'https://source.unsplash.com/random/?village',
+  },
+]
+
 const Houses = ({ navigation }) => {
   const theme = useTheme()
   const width = Dimensions.get('window').width
@@ -114,8 +129,42 @@ const Houses = ({ navigation }) => {
               </View>
             </TouchableOpacity>
           </View>
-          <View>
-            
+          <View style={{ marginTop: 20, flexDirection: 'row', gap: 10 }}>
+            {box.map((item, index) => (
+              <TouchableOpacity
+                key={index}
+                style={{
+                  flex: 1,
+                  backgroundColor: 'white',
+                  elevation: 10,
+                  borderBottomLeftRadius: 10,
+                  borderBottomRightRadius: 10,
+                }}
+              >
+                <View>
+                  <Image
+                    source={{ uri: item.img }}
+                    style={{
+                      width: '100%',
+                      height: width * 0.3,
+                      borderTopLeftRadius: 10,
+                      borderTopRightRadius: 10,
+                    }}
+                    resizeMode="cover"
+                  />
+                  <View style={{ margin: 10, gap: 5 }}>
+                    <Text style={{ fontSize: 17, fontWeight: '600' }}>
+                      {item.title}
+                    </Text>
+                    <Text style={{ opacity: 0.5 }}>{item.place}</Text>
+                    <View style={{ flexDirection: 'row', opacity: 0.5 }}>
+                      <Text style={{ marginRight: 5 }}>({item.star})</Text>
+                      <AntDesign name="star" size={17} color="yellow" />
+                    </View>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            ))}
           </View>
         </View>
       </SafeAreaView>

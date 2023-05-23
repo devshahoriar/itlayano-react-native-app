@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Text, TouchableOpacity, View, ScrollView } from 'react-native'
+import { Text, TouchableOpacity, View, ScrollView, StatusBar } from 'react-native'
 import Accordion from 'react-native-collapsible/Accordion'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { gray } from '../utils/th'
@@ -98,6 +98,7 @@ const Faq = ({ navigation }) => {
 
   return (
     <View style={{height: "100%", backgroundColor: "white"}}>
+      <StatusBar backgroundColor="white" barStyle='dark-content' />
       <SafeAreaView style={{ marginTop: 10 }}>
       <View>
         <Text style={{ fontSize: 30, fontWeight: 'bold', textAlign: 'center' }}>
