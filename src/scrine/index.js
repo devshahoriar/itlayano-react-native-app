@@ -9,5 +9,19 @@ import Chat from './Chat'
 import Privechi from './Privechi'
 import Support from './Support'
 import Faq from './Faq'
+import Houses from './Houses'
 
-export { Home, LogIn, Profile, Register, Filter, Status , AddPropaty, Chat, Privechi, Support, Faq }
+export {
+  Home,
+  LogIn,
+  Profile,
+  Register,
+  Filter,
+  Status,
+  AddPropaty,
+  Chat,
+  Privechi,
+  Support,
+  Faq,
+  Houses,
+}

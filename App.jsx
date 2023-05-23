@@ -12,6 +12,7 @@ import {
   Faq,
   Filter,
   Home,
+  Houses,
   LogIn,
   Privechi,
   Profile,
@@ -47,6 +48,7 @@ function App() {
             <Stack.Screen name="Privechy" component={Privechi} />
             <Stack.Screen name="Support" component={Support} />
             <Stack.Screen name="Faq" component={Faq} />
+            <Stack.Screen name="Howeses" component={Houses} />
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>

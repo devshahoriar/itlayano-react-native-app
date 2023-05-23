@@ -49,9 +49,7 @@ const ChatItem = ({ image, messate, side }) => {
           borderColor: theme['color-primary-400'],
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem
-        omnis, laboriosam laudantium voluptates quos blanditiis modi iure
-        dolorum, sequi ad
+        HI! How are you?
       </Text>
     </View>
   )
