@@ -113,7 +113,7 @@ const Chat = ({ navigation }) => {
               marginHorizontal: 10,
               marginBottom: 10,
               justifyContent: 'flex-end',
-              maxHeight: '90%',
+                  maxHeight: '90%',
             }}
           >
             <ScrollView
