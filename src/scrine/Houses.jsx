@@ -72,9 +72,9 @@ const Houses = ({ navigation }) => {
               loop
               width={width - 20}
               height={width / 2}
-              autoPlay={false}
+              autoPlay={true}
               data={slides}
-              autoPlayInterval={3500}
+              autoPlayInterval={1000}
               scrollAnimationDuration={1400}
               style={{ marginTop: 10 }}
               // onSnapToItem={(index) => console.log('current index:', index)}

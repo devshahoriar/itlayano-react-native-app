@@ -254,12 +254,12 @@ const Filter = () => {
         </BottomSheetModal>
 
         <MapView
-          initialRegion={{
-            latitude: 51.5285262,
-            longitude: -0.2664042,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-          }}
+          // initialRegion={{
+          //   latitude: 51.5285262,
+          //   longitude: -0.2664042,
+          //   latitudeDelta: 0.0922,
+          //   longitudeDelta: 0.0421,
+          // }}
           style={{ width: '100%', height: windowHeight * 0.4 }}
         />
 

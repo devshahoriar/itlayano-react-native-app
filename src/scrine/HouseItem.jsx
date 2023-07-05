@@ -5,12 +5,12 @@ import {
   Dimensions,
   Text,
   TouchableOpacity,
-  StatusBar,
   ImageBackground,
 } from 'react-native'
 import { gray } from '../utils/th'
 import { useTheme } from '@ui-kitten/components'
 import { useState } from 'react'
+import { StatusBar } from 'expo-status-bar'
 
 const TabBtn = ({ title, set, state}) => {
   const active = state === title
@@ -35,7 +35,7 @@ const HouseItem = ({ navigation }) => {
   const [active, setActive] = useState('Description')
   return (
     <View style={{ backgroundColor: 'white', height: '100%' }}>
-      {/* <StatusBar barStyle="dark-content" backgroundColor="white" /> */}
+      <StatusBar style='auto' />
       <ImageBackground
         resizeMode="cover"
         style={{ height: winHight * 0.35 }}
@@ -112,13 +112,13 @@ const HouseItem = ({ navigation }) => {
         </View>
         <View style={{marginHorizontal: 20}}>
           {active === 'Description' && (
-            <Text>Description tab</Text>
+            <Text style={{fontSize: 35}}>Description tab</Text>
           )}
           {active === 'Review' && (
-            <Text>Review tab</Text>
+            <Text  style={{fontSize: 35}}>Review tab</Text>
           )}
           {active === 'Direction' && (
-            <Text>Direction tab</Text>
+            <Text  style={{fontSize: 35}}>Direction tab</Text>
           )}
         </View>
       </View>

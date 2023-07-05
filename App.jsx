@@ -25,6 +25,7 @@ import Boot from './src/scrine/Boot'
 import { default as theme } from './src/utils/custom-theme.json'
 import 'react-native-reanimated'
 import 'react-native-gesture-handler'
+import Test from './src/scrine/Test'
 
 const Stack = createNativeStackNavigator()
 
@@ -51,6 +52,7 @@ function App() {
             <Stack.Screen name="Faq" component={Faq} />
             <Stack.Screen name="Howeses" component={Houses} />
             <Stack.Screen name="HouseItem" component={HouseItem} />
+            <Stack.Screen name="Test" component={Test} />
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>
